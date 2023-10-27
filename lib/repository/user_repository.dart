@@ -1,6 +1,6 @@
-import 'package:flutter_mvvm_architecture/data/cache/auth_cache_manager.dart';
-import 'package:flutter_mvvm_architecture/data/model/user_model.dart';
-import 'package:flutter_mvvm_architecture/data/service/user_service.dart';
+import '../data/cache/auth_cache_manager.dart';
+import '../data/model/user_model.dart';
+import '../data/service/user_service.dart';
 
 class UserRepository {
   final UserService service;

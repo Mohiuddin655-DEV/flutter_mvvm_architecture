@@ -1,8 +1,8 @@
-import 'package:flutter_mvvm_architecture/repository/user_repository.dart';
-import 'package:flutter_mvvm_architecture/utils/dependency_injection.dart';
 import 'package:get/get.dart';
 
 import '../../data/model/user_model.dart';
+import '../../repository/user_repository.dart';
+import '../../utils/dependency_injection.dart';
 
 class ProfileController extends GetxController {
   final UserRepository _repository = locator<UserRepository>();

@@ -1,15 +1,15 @@
 import 'package:app_color/app_color.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_andomie/utils.dart' as fo;
+import 'package:flutter_andomie/utils.dart';
 import 'package:flutter_androssy/extensions.dart';
 import 'package:flutter_androssy/widgets.dart';
-import 'package:flutter_mvvm_architecture/res/routes/routes_name.dart';
 import 'package:get/get.dart';
 
 import '../../data/model/trade_model.dart';
 import '../../res/components/appbar_title.dart';
 import '../../res/components/general_exception.dart';
 import '../../res/components/internet_exception.dart';
+import '../../res/routes/routes_name.dart';
 import '../../viewmodel/controllers/dashboard_controller.dart';
 
 class DashboardView extends StatefulWidget {
@@ -90,7 +90,7 @@ class _DashboardViewState extends State<DashboardView> {
                               ),
                               const TextView(text: " : "),
                               TextView(
-                                flex:2,
+                                flex: 2,
                                 text: e.value.toString(),
                                 textColor: Colors.grey,
                                 textOverflow: TextOverflow.ellipsis,
@@ -109,7 +109,8 @@ class _DashboardViewState extends State<DashboardView> {
                     itemCount: response.result.size,
                   ),
                   TextView(
-                    text: "Total Profit : ${_totalProfit(response.result).toStringAsFixed(2)}",
+                    text:
+                        "Total Profit : ${_totalProfit(response.result).toStringAsFixed(2)}",
                     textSize: 18,
                     textColor: Colors.white,
                     textFontWeight: FontWeight.w600,

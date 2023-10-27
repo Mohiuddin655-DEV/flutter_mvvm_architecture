@@ -1,5 +1,5 @@
-import 'package:flutter_mvvm_architecture/data/cache/auth_cache_manager.dart';
-import 'package:flutter_mvvm_architecture/data/service/auth_service.dart';
+import '../data/cache/auth_cache_manager.dart';
+import '../data/service/auth_service.dart';
 
 class LoginRepository {
   final AuthService authService;
