@@ -16,6 +16,7 @@ class Application extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter MVVM Architecture with GetX',
       translations: Languages(),
       locale: const Locale('en', 'US'),

@@ -1,5 +1,1 @@
-enum ApiStatus {
-  LOADING,
-  COMPLETE,
-  ERROR,
-}
+enum ApiStatus { loading, complete, error }

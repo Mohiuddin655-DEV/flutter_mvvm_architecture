@@ -20,6 +20,7 @@ class LoginRepository {
     );
     if (token != null) {
       await cacheManager.updateToken(token);
+      await cacheManager.updateId(id);
       await cacheManager.updateLoggedIn(true);
       return token;
     } else {

@@ -3,6 +3,16 @@ import '../network/dio_manager.dart';
 import 'cache_manager.dart';
 
 class AuthCacheManager {
+  static Future<String?> currentUid() {
+    return CacheManager.getString("___currentUid");
+  }
+
+  Future<void> updateId(String? id) async {
+    if (id != null) {
+      await CacheManager.setString("___currentUid", id);
+    }
+  }
+
   Future<bool> isFirstEntry() async {
     return !(await CacheManager.getBool(NetworkEnums.introOff.path) ?? false);
   }
@@ -38,6 +48,8 @@ class AuthCacheManager {
       }
     }
   }
+
+  Future<String?> getToken() => CacheManager.getString(NetworkEnums.token.path);
 
   Future<void> updateTokenFromStorage() async {
     if (await CacheManager.containsKey(NetworkEnums.token.path)) {

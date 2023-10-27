@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_mvvm_architecture/res/components/appbar_title.dart';
-import 'package:flutter_mvvm_architecture/res/components/auth_text_field.dart';
-import 'package:flutter_mvvm_architecture/res/components/rounded_button.dart';
-import 'package:flutter_mvvm_architecture/viewmodel/controllers/login_view_model.dart';
 import 'package:get/get.dart';
+
+import '../../res/components/appbar_title.dart';
+import '../../res/components/auth_text_field.dart';
+import '../../res/components/rounded_button.dart';
+import '../../viewmodel/controllers/login_view_model.dart';
 
 class LoginView extends StatefulWidget {
   const LoginView({super.key});
@@ -19,6 +20,8 @@ class _LoginViewState extends State<LoginView> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: false,
+        centerTitle: true,
         title: AppbarTitle(
           text: "login".tr,
         ),

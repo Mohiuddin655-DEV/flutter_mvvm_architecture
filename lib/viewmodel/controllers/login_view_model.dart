@@ -1,8 +1,8 @@
 import 'package:flutter_androssy/widgets.dart';
-import 'package:flutter_mvvm_architecture/res/routes/routes_name.dart';
 import 'package:get/get.dart';
 
 import '../../repository/login_repository.dart';
+import '../../res/routes/routes_name.dart';
 import '../../utils/dependency_injection.dart';
 import '../../utils/utils.dart';
 
